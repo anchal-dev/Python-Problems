@@ -1,0 +1,14 @@
+from typing import List
+
+class Solution:
+    def largestElement(self, nums: List[int]) -> int:
+
+        maxi = nums[0]
+
+        n = len(nums)
+
+        for i in range(n):
+            if nums[i] > maxi:
+                maxi = nums[i]
+
+        return maxi
