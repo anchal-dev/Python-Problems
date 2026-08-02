@@ -1,0 +1,12 @@
+def transformString(s):
+    ans = ""
+    for ch in s:
+        if ch == 'a':
+            ans+='b'
+        elif ch == 'b':
+            ans += 'a'
+
+        else:
+            ans +=ch
+
+    return ans  

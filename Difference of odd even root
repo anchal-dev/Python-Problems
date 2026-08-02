@@ -1,0 +1,16 @@
+import math
+
+
+def difference(m,n):
+    even = 0
+    odd =0 
+
+    while m <=n :
+        if m%2 == 0:
+            even = even + math.sqrt(m)
+            
+        else:
+            odd = odd + math.sqrt(m)
+
+        m = m + 1
+    return even - odd
