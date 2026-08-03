@@ -1,0 +1,42 @@
+def countFrequency(arr):
+    freq = {}
+
+    for num in arr:
+        if num in freq:
+            freq[num] += 1
+        else:
+            freq[num] = 1
+
+    return freq
+
+
+
+
+    /////////////////////////
+
+
+def countFrequency(arr):
+    hashmap = {}
+
+    for num in arr:
+        if num in hashmap:
+            hashmap[num] += 1
+        else:
+            hashmap[num] = 1
+
+    return hashmap
+
+
+
+////////////////
+Shorter Python Version (Recommended)
+
+
+
+def countFrequency(arr):
+    hashmap = {}
+
+    for num in arr:
+        hashmap[num] = hashmap.get(num, 0) + 1
+
+    return hashmap
