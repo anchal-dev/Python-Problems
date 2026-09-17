@@ -1,0 +1,14 @@
+import heapq
+from multiprocessing import heap
+
+class Solution:
+     def findKthLargest(self, nums: List[int], k: int) -> int:
+          heap = []
+
+          for score in nums:
+               heapq.heappush(heap, score)
+
+               if len(heap)>k:
+                    heapq.pop(heap)
+
+        return heap[0]

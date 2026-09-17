@@ -12,7 +12,7 @@ def countFrequency(arr):
 
 
 
-    /////////////////////////
+    #/////////////////////////
 
 
 def countFrequency(arr):
@@ -27,9 +27,8 @@ def countFrequency(arr):
     return hashmap
 
 
-
-////////////////
-Shorter Python Version (Recommended)
+##////////////////
+#Shorter Python Version (Recommended)
 
 
 
